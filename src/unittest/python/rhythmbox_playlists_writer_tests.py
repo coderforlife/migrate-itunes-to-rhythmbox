@@ -9,7 +9,7 @@ class PlaylistTest(unittest.TestCase):
     def setUp(self):
         self.target_folder = Path(settings.TESTOUTPUT_FOLDER).joinpath("PlaylistTest")
         if not self.target_folder.exists():
-            self.target_folder.makedirs()
+            self.target_folder.mkdir(parents=True, exist_ok=True)
 
     def write_playlist_and_compare(self, itunes_library_input: Path, expected_playlist_xml: Path):
         target_path = self.target_folder.joinpath(expected_playlist_xml.name)

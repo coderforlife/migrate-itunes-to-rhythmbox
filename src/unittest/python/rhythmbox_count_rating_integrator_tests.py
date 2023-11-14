@@ -16,7 +16,7 @@ class CounterIntegrationTest(unittest.TestCase):
     def setUp(self):
         self.target_folder = Path(settings.TESTOUTPUT_FOLDER).joinpath("CounterIntegrationTest")
         if not self.target_folder.exists():
-            self.target_folder.makedirs()
+            self.target_folder.mkdir(parents=True, exist_ok=True)
 
     def test_happy_path(self):
         self.set_values_and_compare(rhythmdb_without_cout_rating=settings.TEST_RESOURCES_FOLDER.joinpath("input", "count_rating", "rhythmdb-without-count-ratings-one-track-missing.xml"),

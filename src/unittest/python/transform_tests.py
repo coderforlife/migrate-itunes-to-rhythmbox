@@ -31,7 +31,7 @@ class LocationTransformTests(unittest.TestCase):
         self.assertEqual(transformed_location, "file:///home/pha/Music/Die%20Orsons/What's%20goes%20(2015)/06.%20Schwung%20In%20Die%20Kiste.mp3")
 
     def test_transform_special_characters(self):
-        transformed_location = self.transform_fixed_replacement("D:/Music/Bla/*?:[]\"<>|(){}'!\;.mp3")
+        transformed_location = self.transform_fixed_replacement("D:/Music/Bla/*?:[]\"<>|(){}'!\\;.mp3")
         self.assertEqual(transformed_location, "file:///home/pha/Music/Bla/*%3F:%5B%5D%22%3C%3E%7C()%7B%7D'!%5C%3B.mp3")
 
         transformed_location = self.transform_fixed_replacement("D:/Music/Bla/§$%=~°^.mp3")
