@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <rhythmdb-playlists>
-  <playlist browser-position="231" name="Klassische Musik" search-type="search-match" show-browser="true" type="static"/>
-  <playlist browser-position="231" name="Meine Lieblingstitel" search-type="search-match" show-browser="true" type="static"/>
-  <playlist browser-position="231" name="Meine Top 25" search-type="search-match" show-browser="true" type="static"/>
-  <playlist browser-position="231" name="Musik der 90er" search-type="search-match" show-browser="true" type="static"/>
-  <playlist browser-position="231" name="Zuletzt gespielt" search-type="search-match" show-browser="true" type="static"/>
-  <playlist browser-position="231" name="MyPlaylist" search-type="search-match" show-browser="true" type="static">
+  <playlist name="Klassische Musik" show-browser="true" browser-position="231" search-type="search-match" type="static"/>
+  <playlist name="Meine Lieblingstitel" show-browser="true" browser-position="231" search-type="search-match" type="static"/>
+  <playlist name="Meine Top 25" show-browser="true" browser-position="231" search-type="search-match" type="static"/>
+  <playlist name="Musik der 90er" show-browser="true" browser-position="231" search-type="search-match" type="static"/>
+  <playlist name="Zuletzt gespielt" show-browser="true" browser-position="231" search-type="search-match" type="static"/>
+  <playlist name="MyPlaylist" show-browser="true" browser-position="231" search-type="search-match" type="static">
     <location>file:///home/pha/Music/Die%20Orsons/What's%20goes%20(2015)/17.%20Das%20%C3%96l.mp3</location>
     <location>file:///home/pha/Music/Grossstadtgel%C3%BCster/Oh%20Ein%20Reh%20(2013)/02_grossstadtgefluester_-__konfetti_und_yeah.mp3</location>
     <location>file:///home/pha/Music/In%20Extremo/S%C3%BCnder%20ohne%20Z%C3%BCgel/11.%C3%93skasteinar.mp3</location>

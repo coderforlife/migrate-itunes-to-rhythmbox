@@ -1,6 +1,7 @@
 import unittest
 from lxml import etree
 from pathlib import Path
+import shutil
 from migrate_itunes_to_rhythmbox import itunes_library_reader, rhythmbox_count_rating_integrator, settings
 from migrate_itunes_to_rhythmbox.rhythmbox_count_rating_integrator import SongStatistic, IntegrationLog
 
@@ -60,7 +61,7 @@ class CounterIntegrationTest(unittest.TestCase):
                                itunes_library_root: str="D:/Music/",
                                rhythmbox_library_root: str="/home/pha/Music/") -> IntegrationLog:
         target_rhythmdb = self.target_folder.joinpath(output_file_name)
-        rhythmdb_without_cout_rating.copy(target_rhythmdb)
+        shutil.copy(rhythmdb_without_cout_rating, target_rhythmdb)
         itunes_library = str(itunes_library_path)
         songs = itunes_library_reader.read_songs(itunes_library)
         log = rhythmbox_count_rating_integrator.set_values(itunes_songs=songs,
